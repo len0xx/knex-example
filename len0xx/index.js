@@ -3,6 +3,8 @@ import db from './db.js'
 
 const app = express()
 
+db.raw('SELECT 1').then(() => console.log('DB is initialized')).catch(err => console.error(err))
+
 app.get('/', (req, res) => {
 	res.status(200).json({
 		ok: true
