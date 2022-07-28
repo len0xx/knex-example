@@ -9,5 +9,5 @@ npm run start
 
 This will run a server with 3 routes:
 - `/` Just says { ok: true }
-- `/new` Inserts a new entry to the database
-- `/list` Returns all the entries in the database
+- `/new?name=<NEW_NAME>` Inserts a new entry with the name <NEW_NAME> to the database
+- `/session/<ID>` Returns the entry with specified <ID>
